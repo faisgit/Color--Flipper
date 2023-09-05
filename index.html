@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="flex justify-between px-5 py-4 shadow-xl bg-white">
+        <h1 class="text-2xl font-bold ml-6">Color Flipper</h1>
+        <ul class="flex items-center">
+          <li
+            class="text-sm mx-4 font-semibold hover:bg-black hover:text-white px-3 py-2 rounded-lg duration-700"
+          >
+            <a href="index.html">Rgb Color</a>
+          </li>
+          <li
+            class="text-sm mx-4 font-semibold hover:text-sky-600 hover:bg-black hover:text-white px-3 py-2 rounded-lg duration-700"
+          >
+            <a
+              href="hex.html
+            "
+              >Hex Color</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex justify-center items-center h-1/2 pt-40">
+      <div class="flex flex-col justify-center items-center">
+        <div class=" flex items-center  bg-black text-white px-5 py-3 rounded">
+          <h1 class="font-semibold text-xl mr-3">Background Color :</h1>
+          <span class="printing-color font-semibold text-xl"></span>
+        </div>
+        <button class="mt-4 bg-white border-2 border-solid  border-black px-5 py-2 rounded-lg font-semibold hover:bg-black hover:text-white duration-700" id="changing-color">Click Me</button>
+      </div>
+    </main>
+  </body>
+  <script src="rgb.js"></script>
+</html>
